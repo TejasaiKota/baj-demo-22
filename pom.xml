@@ -20,7 +20,7 @@
       <plugin>
         <groupId>com.google.cloud.tools</groupId>
         <artifactId>jib-maven-plugin</artifactId>
-        <version>3.2.0</version>
+        <version>3.3.1</version>
         <executions>
           <execution>
             <phase>package</phase>
@@ -30,8 +30,12 @@
           </execution>
         </executions>
         <configuration>
-        <source>6</source>
-        <target>1.6</target>
+          <from>
+            <image>openjdk:11-jre-slim</image>
+          </from>
+          <to>
+            <image>my-app-image</image>
+          </to>
         </configuration>
       </plugin>
     </plugins>
